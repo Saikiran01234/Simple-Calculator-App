@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: #181f32;
+    --grey: #647299;
+    --red: #d13f30;
+    --dark-grey: #3b4664;
+    --violet: #252d44;
+    --white: #fff;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--dark-grey);
+}
+
+.calculator {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+
+.key:hover,
+.answerKey:hover,
+.delete-key:hover,
+.resetKey:hover {
+    cursor: pointer;
+}
+
+.displayName {
+    height: 20%;
+    width: 100%;
+    border-radius: 12px;
+    background: #181F32;
+
+}
+
+.user-input {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border-radius: 16px;
+    border-style: none;
+    padding: 12px;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    font-size: 3rem;
+}
+
+.keypad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70%;
+    padding: 5%;
+    gap: 1rem;
+    border-radius: 12px;
+    background: #252D44;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 20%;
+    gap: 1.5rem;
+}
+
+.key {
+    background-color: var(--white);
+    width: 21%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.delete-key {
+    background-color: var(--grey);
+    width: 21%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.resetKey,
+.answerKey {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.resetKey {
+    background-color: var(--grey);
+}
+
+.answerKey {
+    background-color: var(--red);
+}
